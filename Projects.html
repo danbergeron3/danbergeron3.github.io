@@ -1,0 +1,116 @@
+<!--
+  File: Projects.html
+  GUI Assignment: Creating my frist website
+  Daniel Bergeron, Umass Lowell Computer Science, Daniel_Bergeron1@student.uml.edu
+  Copyright (c) 2023 by Daniel. All rights reserved. May freely be copied or
+  excerpted for educational purposes with credit to the author.
+  updated by DB on September 25, 2023 at 9:11
+  Credits: Proffesor Wenjin Zhou for html template and assignment
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Daniel Bergeron's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <!--page is used to highlight my software projects-->
+
+  <body>
+    <div class="head-2">
+
+      <!--This will be the menu bar cs will style it but the basic layout is as follows
+      1. Use nav tag to define set of navigation links
+      2. ul for unordered list 
+      3. li to specifie a bullet point list   -->
+
+      <h1>Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="Projects.html" >Projects</a></li>
+          <li><a href="About-Me.html" >About Me</a></li>
+          <li><a href="Contact-Me.html" >Contact Me</a></li>
+        </ul>
+      </nav>
+
+    </div>
+		<div class="box-1">
+
+      <!--The feature assignment is one that I want to draw attention too It is formated uisng box-3
+      I used box-2 to highlight some information that is seprate from the main text -->
+
+      <h2>Featured Project - Checkers</h2>
+      <div class="box-3">
+
+        <div class="imagecontainer2">
+
+          <!--Image is personaly taken from my checkers project-->
+          
+          <img src="resources/images/Screenshot.png" alt="Checkers" class="imagecontainer">
+        </div>
+        
+        <h3>About the Assignment</h3>
+        <p>This assignment involved setting up a checkers board for a checkers game. 
+          It did not require the addition of the actual game play mechanics, but it 
+          did require the development of an interactive highlight feature. Whenever 
+          a player moused over a piece the background becomes yellow. I was able to 
+          get all these features working properly. The key takes aways from this program 
+          for me was learning from past mistakes. In Sokoban I did not make the background 
+          static which caused me problems down the road. In this program I created the 
+          checkerboard/background in the constructor. After this I did not have to worry 
+          about losing visuals when the dynamic elements were introduced, since everything 
+          would be layered over this background.  In the constructor I also loaded all the
+          textures into a texture into a map. This allowed me to access them at my convenience
+          at anytime in my other functions. In my constructor I loaded the pieces into my
+          piece matrix. Which in my head was a separate entity. In the draw function the
+          checkerboard and matrix would be brought together to generate the game time board.
+          It was here that I made an interesting design choice. In the class Checkers there
+          existed a matrix that contained an object from the piece class. It was these
+          pieces that contained all the information the game required for movement and visuals.
+          I treated my board as a matrix filled with light bulbs, where a light is either on or off,
+          light is visible, or it is not visible. In the same vein the entire matrix was
+          filled with pieces but somewhere on while somewhere off. This was so in future 
+          assignments when I needed to move a piece, I didn't actually move anything I simply
+          turned one piece off and another on. This also played into the selection feature of a piece.
+          A piece is either selected or it is not.  When it was turned on it communicated to the draw function
+          that it needed to draw a highlight before the piece. Since this is all contained to the pieces and by extension
+          the matrix they exist in, it is impossible for the user to alter the integrity of the background.
+          I feel that my development of this program grew Sokoban and better channeled Object-Oriented Programing
+          principles. I did run into a new problem. The problem was a result of left over input from the mouse causing extra
+          input to affect the program, this was resolved by creating a clearMouseBuffer function. A simple 
+          function that loops while the program picks up extra input data. </p>
+      </div>
+
+      <!-- In this case box-2 shows some more in depth information abotu the project-->
+      <div class="box-2">
+        <h3>Key Elements Discussion</h3>
+        <p>There are two elements that were central to this assignment, the first being the vector. I used a vector
+           to create a matrix in which I placed and stored store game pieces which were crucial to this program. 
+           Pieces are a class used to give each piece characteristics that allow it to interact with the checkers 
+           in main as its own little interphase, that builds into the entire checkers’ game. This program helped 
+           me to continue to develop my understanding of object-oriented programs. And, while I did not have to 
+           implement any complicated algorithms for this project, it did give me the opportunity to build off my 
+           failures in the last assignments.</p>
+      </div>
+
+    </div>
+	</body>
+
+  <!-- Added a basic footer to add to the sturcture and give it a higher level of professionalism-->
+
+  <footer>
+    <div class="footer-text-left">
+      <a href="About-Me.html" >About Me</a>
+      <a href="Contact-Me.html" >Contact Me</a>
+    </div>
+    <div class="footer-text-right">
+      <p>Powered by HTML5</p>
+    </div>
+  </footer>
+
+	<!-- <script src="script.js"></script> -->
+
+</html>

@@ -1,0 +1,195 @@
+/*
+  File: style.css
+  GUI Assignment: Creating my frist website
+  Daniel Bergeron, Umass Lowell Computer Science, Daniel_Bergeron1@student.uml.edu
+  Copyright (c) 2023 by Daniel. All rights reserved. May freely be copied or
+  excerpted for educational purposes with credit to the author.
+  updated by DB on September 25, 2023 at 9:11
+  Credits: Proffesor Wenjin Zhou for html template and assignment
+*/
+
+
+/*.head is the main style featured on the home page at the top
+ .head-2 is the same but formated slightly different to indicate
+ that you are no longer on the home page but rather a sub page
+ .h1 is the specific stylization of the head text */
+
+body .head {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #6a6b70; 
+    padding: 5px;
+}
+
+body .head-2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #6a6b70; 
+    padding: 5px;
+}
+
+body .head h1 {
+    font-size: 50px;
+    color:#fff;
+    text-shadow: #1d1d1d 1px 0px 1px;
+    text-decoration: underline;
+}
+
+body .box-1 table {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body .head-2 h1 {
+    font-size: 50px;
+    color:#fff;
+    text-shadow: #1d1d1d 1px 0px 1px;  
+}
+
+/* This section is the css the tables are located under
+    box-1, adds padding to rows and cells
+  */
+
+body .box-1 table tr{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body .box-1 table tr td {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/*Unless overwritten by another class
+this is the basic layout of the body*/
+
+body {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:16px;
+    font-weight: normal;
+    /*use em for line height*/
+    line-height: 1.8em;
+    margin:0;
+
+}  
+
+/*Boxes are used to orgainze the text on the page
+  box-1 is the underlying formater that give the page 
+  a more layered look
+  box-2 is what I used to encapsulate specific text that is importent,  
+  but, seperate form the main text.
+  box-3 is for the main text if it requires more formating*/
+.box-1 {
+    background-color: #393a41;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ 
+.box-2 {
+    border:5px#2272FF solid;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.box-3 {
+    text-align: left;
+}
+
+/*imagecontainer 1 & 2 format the image one is for images requireing borders
+  while 2 simply adds margins to center it*/
+.imagecontainer {
+    border:5px #6a6b70 solid;
+}
+
+.imagecontainer2 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* This section adds the advanced formating required to make the 
+   menu bar it requires that ul li and a to have very specifc rules 
+   this section is seperated by '*' to note that it is needed as is 
+   for a specific feature it should only be edited if that feature needs 
+   to change*/
+
+ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    background-color: #2272FF;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    display: inline;
+    background-color: #2272FF;
+}
+
+/********************************************************************************/
+/*Footer: this section formats a basic footer with a basic menu this section is seperate
+  from the boby because it is a sepreate design component that should not change with the body
+  it is implmented on every page to give it a proffresional look*/
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #2272FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-text-left {
+    font: size 20px;
+    padding-left:40px;
+    padding-top: 40px;
+    float:left;
+    word-spacing:5px;
+}
+.footer-text-right {
+    font-size:12px;
+    padding-right:40px;
+    padding-top: 40px;
+    float:right;
+    word-spacing:5px;
+    color: #fff
+}
+
+footer a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:#fff;
+}
+/* Footer end ******************************************************/
+
+/* adds basic style to h2 and h3 to indicate to reader they are in sub-sections 
+*/
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #6a6b70; 
+    padding: 5px;
+}
+
+h3 {
+    background-color: #1d1d1d; 
+    padding: 5px;
+}
