@@ -1,0 +1,151 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+/*Body provides padding for the content as well as
+ overall background */
+body {
+	background-color: blue;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image:url(ptrbackground.jpg);
+	color:#049be7;
+	padding-bottom: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 20px;
+}
+
+
+/*wrapper defines the overall size as well as the grid layout and
+base color scheme under it is the main components in the grid,
+header, nav, content and footer*/
+#wrapper {
+	background-color: lightblue;
+	min-width: 600px;
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 57px 90%;
+
+}
+
+header {
+	grid-column: span 2; /*header must take up its entire row*/
+	background-color: #fff;
+}
+
+#wrapper nav ul {
+	font-size: 1.2em;
+	list-style: none;
+	height: 100%;
+	background-color: lightblue;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 80px;
+	padding-bottom: 34.4px;
+}
+
+#content {
+	padding-left: 20px;
+	background-color: #fff;
+
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: #fff;
+	grid-column: 2;
+	font-style: italic;
+	color: #000;
+	font-size: .9em;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+#contact {
+	font-size: 90%;
+	color: #000;
+}	
+
+/*importent to float images so text can wrapp around it*/
+img {
+	float: left;
+	margin-right: 20px;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+#content li {
+	list-style-image: url(marker.gif);
+}
+
+dt {
+	color: #000033;
+}
+
+h1 {
+	color: aliceblue;
+	background-image:url(sunset.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 10px;
+}
+
+h2 {
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.resort {
+	font-weight: bold;
+	font-size: 1.5em;
+	
+}
+
+.content .resort::after {
+	content: "\A"; /* Inserts a line break character */
+  	white-space: pre;
+}
+
+
+p {
+	color: #000;
+}
+
+li {
+	color: #000;
+}
+
+span {
+	color: #3399CC;
+}
+
+a {
+	text-decoration: none;
+	color:#344873;
+	font-weight: 800;
+	font-size: .9em;
+}
+
+#wrapper nav ul li {
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+}
+
+footer a {
+	text-decoration: underline;
+	color: blue;
+}
