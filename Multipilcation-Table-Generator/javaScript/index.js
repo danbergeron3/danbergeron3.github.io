@@ -45,25 +45,25 @@ function createTable() {
     for(var i = 0; i <= totalRows + 1; i++){
         table = document.getElementById("mult-table").insertRow(i);
         for(var j = 0; j <= totalCols + 1; j++) {
-            // 0 spot
+            // (0,0) location
             cell = table.insertCell(j);
             if(i === 0 && j === 0) {
                 cell.innerHTML = " ";
                 cell.classList.add("null-cell");
             }
-            // top bar
+            // (n,0) row
             else if (i === 0 && j > 0) {
                 cell.innerHTML = parseInt(j, 10) + parseInt(minCol, 10) - 1;
                 cell.classList.add("cell");
                 
             }
-            // side bar 
+            // (0, n) column
             else if (j === 0 && i > 0){ 
 
                 cell.innerHTML = parseInt(i, 10) + parseInt(minRow,10) - 1;
                 cell.classList.add("cell");
             } 
-            // everything else
+            // everything else, perfrom multiplcation, and style based on even or odd values
             else {
                 var value = (parseInt(j,10) + parseInt(minCol, 10) - 1) * (parseInt(minRow, 10) + parseInt(i, 10) - 1);
                 cell.innerHTML = value;
@@ -75,24 +75,17 @@ function createTable() {
             }   
         }
     }
-    // Select the table element
-    table = document.getElementById("mult-table");
-
-    // Loop through the rows and add a CSS class to each row
-    for (var i = 0; i < table.rows.length; i++) {
-        table.rows[i].classList.add(".row");
-    }
-    
     clearInput();
 }
 
 function clearTable() {
+    // destroy all nodes found under mult-table
     var node = document.getElementById("mult-table");
     node.querySelectorAll('*').forEach(n => n.remove());
 }
 
 function clearError() {
-
+    // remove everything associated with invalid-Input
     var error = document.getElementById("invalid-Input");
     if(error.children.length > 0) {
         error.innerHTML = "";
@@ -103,6 +96,7 @@ function clearError() {
 }
 
 function clearInput() {
+    // replace text with empty characters
     var item = document.getElementById('max-col');
     item.value = "";
     item = document.getElementById('min-row');
@@ -114,6 +108,7 @@ function clearInput() {
 }
 
 function errorMessage(error) {
+    // given a messaage generate an error message under the invalid-Input
     const para = document.createElement("p");
     const node = document.createTextNode(error);
     para.appendChild(node);
@@ -121,6 +116,7 @@ function errorMessage(error) {
     element.appendChild(para); 
     element.classList.add("error-msg");
 }
+
+// give callback method and event to the listener
+// code is executed upon press of button with .btn ID
 document.querySelector(".btn").addEventListener("click", createTable);
- 
- 
