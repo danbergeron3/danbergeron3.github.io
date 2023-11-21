@@ -12,6 +12,8 @@ body {
 /*navigation*/
 .top-bar {
   display: flex;
+  position: sticky;
+  top: 0;
   flex-basis: 100%;
   flex-direction: column;
   justify-content: center;
