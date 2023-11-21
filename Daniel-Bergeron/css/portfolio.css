@@ -1,0 +1,44 @@
+body {
+    background-color: #4d4f4e;
+}
+
+.top-bar {
+    background-color: #606361;
+}
+
+h1, h2, table{
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+tr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+   
+}
+td {
+    border: solid #000 2px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.top-bar a:hover {
+    background-color: #000;
+}
+
+table a:hover {
+    color: #fff;
+}
+
+li {
+    margin-bottom: 20px;
+}

@@ -9,6 +9,46 @@ body {
   background-repeat: no-repeat;
 }
 
+/*navigation*/
+.top-bar {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #606361;
+}
+
+.top-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.top-bar li {
+  display: inline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.top-bar li {
+  float: left;
+}
+
+.top-bar a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.top-bar a:hover {
+  background-color: #000;
+}
 
 #title{
   display: flex;
@@ -163,3 +203,5 @@ button a {
 .footerContainer p {
   margin: 10px 0px 0px 0px;
 }
+
+
