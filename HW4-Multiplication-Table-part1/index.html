@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Multiplication Table</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    </head>
+    <body>
+        <h1>Dynamic Multiplication Table</h1>
+        <div class="error-container">
+            <div id="invalid-Input">
+                        
+            </div>
+        </div>
+        <div class="container">
+            <div class="input">
+                <div class="prompt"> 
+                    <form id="inputForm">
+                        <h2>Please Enter Table Ranges</h2>
+                        <fieldset>
+                            <div class="grid-container">
+                                <div class="grid-item1">
+                                    <label for="input1">Enter a Row Value (-200 to 200):</label>
+                                </div>
+                                <div class="grid-item2">
+                                    <input id="input1" name="input1"><br>
+                                </div>
+                                <div class="grid-item1">
+                                    <label for="input2">Enter a Row Value (-200 to 200):</label>
+                                </div>
+                                <div class="grid-item2">
+                                    <input id="input2" name="input2"><br>
+                                </div>
+                                <div class="grid-item1">
+                                    <label for="input3">Enter a Column Value (-200 to 200):</label>
+                                </div>
+                                <div class="grid-item2">
+                                    <input id="input3" name="input3"><br>
+                                </div>
+                                <div class="grid-item1">
+                                    <label for="input4">Enter a Column Value (-200 to 200):</label>
+                                </div>
+                                <div class="grid-item2">
+                                    <input id="input4" name="input4"><br>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <button class="btn">Create</button>
+                    
+                </div>
+            </div>
+            <div class="output">
+                <!--Table:-->
+                <div class="grid-container2">
+                    <table id="mult-table">
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
+ 

@@ -1,0 +1,178 @@
+/*pallete: https://colorhunt.co/palette/27374d526d829db2bfdde6ed*/
+body {
+    margin: 0 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 650px;
+}
+
+/*CSS for headers*/
+h1 {
+    font-family: serif;
+    width: 100%;
+    text-align: center;
+    background-color: #27374D;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 2rem;
+   
+}
+
+h2 {
+    font-family: serif;
+    font-size: 2rem;
+    padding: 10px 20px 0px 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #666666;
+}
+
+/*main container for all page elements*/
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 81.5vh;
+}
+
+/*CSS for inputing form*/
+.input {
+    margin-top: 10px;
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.prompt {
+    height: 90%;
+}
+
+.grid-item1 {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px 0px 20px;
+    font-size: 1rem;
+}
+
+.grid-item2 {
+    padding: 10px 20px 0px 20px;
+}
+
+.grid-item2 input {
+    display: inline-block;
+    height: 1rem;
+    margin: 5px 20px 5px 0px;
+    padding: 1%;
+    width: 90%;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 2%;
+    font-size: 1.8rem;
+    background-color: #526D82;
+    color:#ffffff;
+    border-color: #000;
+    border-radius: 8px;
+    letter-spacing: 1.5px;
+    padding: 5px 10px 5px 10px;
+    box-shadow: #27374D 2px;
+}
+
+button:hover {
+    background-color: #27374D;
+}
+
+.btn {
+    display: inline-block;
+    width: 50%;
+}
+
+.btn-2{ 
+    display: none;
+}
+/*End of input styles*/
+
+/* Styles output */
+
+.tab-container {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/*scroll is added only to the output
+* that way the form is never lost*/
+.output {
+    height: 70vh;
+    background-color: #DDE6ED;
+    padding: 10px 10px 0px 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    max-height: 70vh;
+    
+}
+/*End of static output styles*/
+
+/*
+* Styles for javaScript:
+* these classes will be dynamically added
+* upon when an event occurs
+*/
+#mult-table{
+    background-color: #9DB2BF;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#tabs {
+    max-height: 83vh;
+    height: 83vh; 
+}
+#tabs-2 {
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.evenCell{
+    text-align: center;
+    background-color: #496072;
+    color: #EEEEEE;
+    padding: 5px, 10px, 5px, 10px;
+}
+
+.oddCell{
+    text-align: center;
+    background-color: #DDE6ED;
+    padding: 5px, 10px, 5px, 10px;
+}
+
+.cell {
+    text-align: center;
+    background-color: #27374D;
+    color: aliceblue;
+    padding: 5px, 10px, 5px, 10px;
+    min-width: 50px;
+    height: 10px;
+    
+}
+
+.error-msg {
+        background-color: rgb(212, 66, 71);
+        display: inline-block;
+        color: #000;
+        height: 1.5rem;
+        margin: 10px 20px 10px 0px;
+        padding: 1%;
+        width: 90%;
+       
+}
+
+/*End of javaScript classes*/
