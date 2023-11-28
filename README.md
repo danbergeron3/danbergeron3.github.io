@@ -7,4 +7,4 @@ Pages:
 <br />  https://danbergeron3.github.io/Daniel-Bergeron/
 <br />  https://danbergeron3.github.io/Travel-Poster/
 <br />  https://danbergeron3.github.io/Daniel-Bergerons-Portfolio/
-<br />  https://danbergeron3.github.io/Multipilcation-Table-Generator/
+<br />  https://danbergeron3.github.io/HW3-Multipilcation-Table-Generator/
