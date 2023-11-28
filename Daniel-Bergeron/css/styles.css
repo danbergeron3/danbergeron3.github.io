@@ -1,0 +1,209 @@
+body {
+  background-color: #e9e9e8;
+  margin: 0 0 0 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.code_background{
+  background-size: 100% 100%;
+  background-image: url("../images/code2.jpg");
+  background-repeat: no-repeat;
+}
+
+/*navigation*/
+.top-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #606361;
+}
+
+.top-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.top-bar li {
+  display: inline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.top-bar li {
+  float: left;
+}
+
+.top-bar a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.top-bar a:hover {
+  background-color: #000;
+}
+
+#title{
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.centerTitle {
+ text-align: center;
+ padding-bottom: 200px;
+}
+/* add fonts after*/ 
+h1 {
+  color: #fff;
+  font-size: 5rem;
+  font-family: 'Noto Serif', serif;
+} 
+
+h2 {
+  color:#242528;
+  font-family: 'Noto Serif', serif;
+}
+
+#hero{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.heroContainer {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+
+.portraitContainer img{
+  border-radius: 50%;
+}
+
+.portraitContainer {
+  margin-bottom: 20px;
+}
+
+#skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skillHeading{
+  margin-bottom: 20px;
+}
+
+.skill {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 50%;
+}
+.skillImg img{
+  float: left;
+  width: 250px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+#contact-info{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactContent{
+  text-align: center;
+}
+
+.contactContent h2 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+
+}
+.contactContent h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.contactContent p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contactContent button {
+  margin-bottom: 10px;
+  border-radius: 5%;
+  border: solid #606361 3px;
+  background-color: #e9e9e8;;
+  color:#fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+button a {
+  text-decoration: none;
+  color: #606361;
+  padding: 20px;
+}
+
+.contactContent button h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contactContent button:hover {
+  background-color: aliceblue;
+}
+
+#footer{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.footerContainer {
+  background-color: #606361;
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  margin-top: 75px;
+  color: #fff
+}
+
+.footerContainer a {
+  text-decoration: none;
+  color:#4d4f4e;
+  margin: 10px 20px 30px 20px;
+  
+}
+.footerContainer nav {
+  margin-bottom: 40px;
+}
+
+.footerContainer a:hover{
+  color: #fff;
+}
+.footerContainer p {
+  margin: 10px 0px 0px 0px;
+}
+
+
