@@ -1,0 +1,83 @@
+h1 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+.game {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.game-stats {
+    width: 90%;
+}
+
+img {
+    width: 650px;
+    height: 100px;
+    margin: 20px 0px 20px 0px;
+}
+.game-boared {
+    height: 80vh;
+    
+}
+.tile-holder {
+    margin-top: 20px;
+    background-image: url('../graphics_data/scrabble-tile-holder-406774_640.png');
+    height: 25%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tiles {
+    width: 100%;
+    display: inline;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+/**Drag stuff*/
+.drops {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.drop1 {
+    border: solid black 5px;
+    background-image: url("../graphics_data/space.png");
+    height: 100px;
+    width: 100px;
+}
+
+.drop2 {
+    border: solid black 5px;
+    height: 100px;
+    width: 100px;
+    background-image: url("../graphics_data/doubleSpace.PNG");
+    background-size: cover;
+}
+
+.drag {
+    border: solid black 1px;
+    height: 100px;
+    width: 100px;
+}
+
+/*JavaScript stlyes */
+.highlight {
+    border: solid rgb(246, 255, 0) 5px;
+}
+
+.highlight2 {
+    border: solid rgba(0, 123, 255, 0.485) 5px;
+}
+
+.frozen {
+    pointer-events: none; /* Disable pointer events to prevent further interaction */
+}
