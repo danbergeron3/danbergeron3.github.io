@@ -10,3 +10,4 @@ Pages:
 <br />  https://danbergeron3.github.io/HW3-Multipilcation-Table-Generator/
 <br />  https://danbergeron3.github.io/HW4-Multiplication-Table-part1/
 <br />  https://danbergeron3.github.io/HW4-Multiplication-Table-part2/
+<br />  https://danbergeron3.github.io/HW5-Basic-Scrabble/
